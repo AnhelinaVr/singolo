@@ -139,6 +139,7 @@
         }
         
         .home-button_vertical {
+            cursor: pointer;
             width: 40px;
             height: 40px;
             position: absolute;
@@ -147,6 +148,7 @@
         }
         
         .home-button_horizontal {
+            cursor: pointer;
             width: 40px;
             height: 40px;
             position: absolute;
@@ -536,6 +538,7 @@
             border-radius: 5px;
             padding-left: 15px;
             margin-bottom: 16px;
+            cursor: pointer;
         }
         
          ::placeholder {
