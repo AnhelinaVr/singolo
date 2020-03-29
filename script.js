@@ -279,3 +279,27 @@ window.onclick = function(event) {
         modal_content.innerText = '';
     }
 }
+
+const hamburger = document.getElementById('hamburger');
+const LOGO = document.getElementById('logo');
+const NAV_CONTENT = document.getElementsByClassName('navigation__content')[0];
+const LINKS = document.getElementsByClassName('links-burger')[0];
+const SHADOW = document.getElementById('content-burger');
+
+const closeMenu = () => {
+    if (hamburger.classList.contains('hamburger-transform')) {
+        NAV_CONTENT.removeAttribute("id");
+        LINKS.removeAttribute("id");
+        hamburger.classList.remove('hamburger-transform');
+        HOME_SECTION.removeAttribute("id");
+        LOGO.classList.remove('navigation__logo-burger');
+        SHADOW.classList.remove('content-burger');
+    } else {
+        NAV_CONTENT.id = 'navigation__content-burger';
+        LINKS.id = 'links-burger';
+        hamburger.classList.add('hamburger-transform');
+        HOME_SECTION.id = 'navigation-burger';
+        LOGO.classList.add('navigation__logo-burger');
+        SHADOW.classList.add('content-burger');
+    }
+}

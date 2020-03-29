@@ -27,30 +27,30 @@
     <main class="content">
         <div class="wrapper">
             <section class="section__slider" id="slider">
-                <div class="button_container">
-                    <button class="button__slider button__slider-left"></button>
+                <div class="carousel">
+                    <div class="slider">
+                        <div class="button_container">
+                            <button class="button__slider button__slider-left"></button>
+                            <button class="button__slider button__slider-right"></button>
+                        </div>
+                        <div class="slide slide-1 active">
+                            <div class="phone__vertical">
+                                <div class="black vertical-black"></div>
+                                <div class="home-button_vertical"></div>
+                                <img src="./assets/img/iPhone Vertical.png" alt="Телефон">
+                            </div>
+                            <div class="phone__horizontal">
+                                <div class="black horizontal-black"></div>
+                                <div class="home-button_horizontal"></div>
+                                <img src="./assets/img/iPhone Horizontal.png" alt="Телефон">
+                            </div>
+                        </div>
+                        <div class="slide slide-2">
+                            <img src="./assets/img/Slide-2.png" alt="Телефон">
+                        </div>
+                    </div>
                 </div>
-                <div class="slider">
-                    <div class="slide slide-1">
-                        <div class="phone__vertical" onclick="changeWallpaperVertical()">
-                            <div class="black vertical-black"></div>
-                            <div class="home-button_vertical"></div>
-                            <img src="./assets/img/iPhone Vertical.png" alt="Телефон">
-                        </div>
-                        <div class="phone__horizontal" onclick="changeWallpaperHorizontal()">
-                            <div class="black horizontal-black"></div>
-                            <div class="home-button_horizontal"></div>
-                            <img src="./assets/img/iPhone Horizontal.png" alt="Телефон">
-                        </div>
 
-                    </div>
-                    <div class="slide slide-2">
-                        <img src="./assets/img/Slide-2.png" alt="Телефон">
-                    </div>
-                </div>
-                <div class="button_container">
-                    <button class="button__slider button__slider-right"></button>
-                </div>
             </section>
             <section class="services" id="services">
                 <div class="wrapper">
@@ -185,15 +185,6 @@
                             <textarea name="details" id="details" placeholder="Describe your project in detail... "></textarea>
                             <input class="send__quote__submit " type="submit" value="Submit" id="send-letter">
                         </form>
-
-                        <!-- Modal Window -->
-                        <div id="send-letter_modal" class="modal">
-                            <div class="modal-content">
-                                <div id="modal-content__letter"></div>
-                                <span id="close-modal">OK</span>
-                            </div>
-                        </div>
-
                         <div class="contact_info ">
                             <h2 class="contact__header ">Contact Information</h2>
                             <p class="contact__description ">
@@ -203,9 +194,15 @@
                             <div class="contact_info__icon "><img src="assets/img/quote_contacts_icons/phone.svg " alt="phone "></div><a class="contact_info__contacts " href="tel:+03528 331 86 35 ">03528 331 86 35</a><br>
                             <div class="contact_info__icon "><img src="assets/img/quote_contacts_icons/email.svg " alt="email "></div><a class="contact_info__contacts " href="mailto:info@singolo.com ">info@singolo.com</a><br>
                         </div>
+                        <!-- Modal Window -->
+                        <div id="send-letter_modal" class="modal">
+                            <div class="modal-content">
+                                <div id="modal-content__letter"></div>
+                                <span id="close-modal">OK</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
             </section>
             <footer>
                 <div class="wrapper ">
